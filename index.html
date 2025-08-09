@@ -9,17 +9,39 @@
 </head>
 <body>
 <div class="weather">
-    <h1>Weather App</h1>
+    <h1>Real Time Weather</h1>
     <div class="search">
         <input type="text" id="cityInput" placeholder="Enter city name">
-    <button class="search-button"><img src="/asset/search.png" alt=""></button>
+    <button id="search-button"><img src="/asset/search.png" alt=""></button>
     </div>
     <div class="weather-info">
-        <h2 id="cityName">City Name</h2>
-        <p id="temperature">Temperature: 0°C</p>
-        <p id="description">Description: Clear</p>
-        <p id="humidity">Humidity: 0%</p>
-        <p id="windSpeed">Wind Speed: 0 m/s</p>
+        <p id="date"></p>
+         <img id="weatherIcon" src="" alt="Weather Icon">
+        <h2 id="temperature"></h2>
+        <h2 id="cityName"></h2>
+        <p id="description"></p>
+      <div class="details">
+  <div class="detail-item">
+    <img src="asset/humidity.png" alt="Humidity">
+    <p id="humidity">60%</p>
+    <p>Humidity</p>
+  </div>
+  <div class="detail-item">
+    <img src="asset/wind.png" alt="Wind Speed">
+    <p id="windSpeed">15 km/h</p>
+    <p>Wind Speed</p>
+  </div>
+  <div class="detail-item">
+    <img src="asset/visibility.png" alt="Visibility">
+    <p id="visibility">1000 m</p>
+    <p>Visibility</p>
+  </div>
+  <div class="detail-item">
+    <img src="asset/feels-like.png" alt="Feels Like">
+    <p id="feelsLike">1000 m</p>
+    <p>Feels Like</p>
+  </div>
+</div>
     </div>
 </div>
 </body>
